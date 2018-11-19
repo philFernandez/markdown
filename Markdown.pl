@@ -1762,7 +1762,7 @@ sub _DoItalicsAndBoldAndStrike {
     my $text = shift;
 
     # <strong> must go first:
-    $text =~ s{ \*\* (?=\S) (.+?[*_]*) (?<=\S) \*\* }
+    $text =~ s{ \* (?=\S) (.+?) (?<=\S) \* }
 	{<strong>$1</strong>}gsx;
     $text =~ s{ (?<!\w) __ (?=\S) (.+?[*_]*) (?<=\S) __ (?!\w) }
 	{<strong>$1</strong>}gsx;
@@ -1770,8 +1770,6 @@ sub _DoItalicsAndBoldAndStrike {
     $text =~ s{ ~~ (?=\S) (.+?[*_]*) (?<=\S) ~~ }
 	{<strike>$1</strike>}gsx;
 
-    $text =~ s{ \* (?=\S) (.+?) (?<=\S) \* }
-	{<em>$1</em>}gsx;
     $text =~ s{ (?<!\w) _ (?=\S) (.+?) (?<=\S) _ (?!\w) }
 	{<em>$1</em>}gsx;
 
