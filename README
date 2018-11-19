@@ -2,9 +2,12 @@
 Markdown
 ========
 
+# This Version Changed to render single * as bold instead of italic. (Philip Fernandez)
+### For proper use with notes.vim :NoteToHtml
+
 Version 1.1.7
 
-John Gruber  
+John Gruber
 Kyle J. McKay
 
 
@@ -231,7 +234,7 @@ Version History
 
 + Markdown.pl: support lower-greek ol lists
 
-+ Markdown.pl: auto-detect latin-1/utf-8 input always output utf-8  
++ Markdown.pl: auto-detect latin-1/utf-8 input always output utf-8
   The minimum version of Perl required is now 5.8.0.
 
 
@@ -428,8 +431,8 @@ Version History
 Copyright and License
 ---------------------
 
-Copyright (C) 2003-2004 John Gruber  
-Copyright (C) 2015-2018 Kyle J. McKay  
+Copyright (C) 2003-2004 John Gruber
+Copyright (C) 2015-2018 Kyle J. McKay
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
